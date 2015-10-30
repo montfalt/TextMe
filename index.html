@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CHAT EN LIGNE</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<div id="page1">
+		<div id="login">
+			<h2> Text-Me !</h2>
+			<img src="man-suit.svg">
+			<form action="/" method="" id="formulaire_connection">
+			    <input type="text" name="login" id="pseudo"  class="login_text" placeholder="Username" size="50" autofocus />
+			    <input type="email" name="email" id="email" class="login_text" placeholder="Email" size="50" autofocus />
+			    <input type="submit" id="envoi_pseudo" value="Let's Go !!" />
+		    </form>
+		    <p> *Rentre ton Email <a href="https://fr.gravatar.com/">Gravatar</a> pour ton avatar !</p>
+		    <p id="alert_Pseudo">Avec un pseudo, c'est plus rigolo ! </p>
+		</div>
+	</div>
+
+	<div id="page2">
+		
+		<div id="chat">
+			<div id="users_scroll_lateral">
+				<div id="users">
+					
+				</div>
+			</div>
+			
+			<img src="logo.svg">
+			<h1>Text-Me !</h1>
+			<form action="/" method="post" id="formulaire_chat">
+			    <textarea id="message" name="message" cols="40" rows="18" placeholder="Votre message..."></textarea>
+			    <input type="submit" id="envoi_message" value="Envoyer" />
+		    </form>
+		    <div id="scroll">
+			    <div id="chat_zone">
+			    	
+
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+    <script src="client.js"></script>
+     <script>
+     		
+
+           
+        </script>
+
+</body>
+</html>
