@@ -1,5 +1,5 @@
 // Connexion à socket.io
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('https://infinite-temple-4380.herokuapp.com/');
 var pseudo = '';
 
  /*
